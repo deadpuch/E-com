@@ -1,0 +1,49 @@
+import React from "react";
+import "./login.css";
+
+function Login() {
+  return (
+    <div className=" relative h-screen">
+      <picture className="flex w-full h-screen">
+        <img src="/image/Login_bg.jpg" alt="" />
+      </picture>
+{/* className="Login_container  flex justify-center rounded-lg  items-center sm:p-20 absolute mx-8 " */}
+      <section>
+        <div className="flex absolute top-0 right  bg-slate-100 p-10">
+          <div className="flex flex-col">
+            <h1 className="font-Opensans text-xl font-bold">Login to your Account</h1>
+
+            <div className="mt-10">
+              <form action="" className="flex flex-col">
+                <label htmlFor="userName" className="font-Opensans text-sm text-slate-700 font-medium mb-2">User Name</label>
+
+                <input type="text" name="" id="userName" className="border-b-2 border-b-neutral-100 mb-5 " />
+
+                <label htmlFor="Password" className="font-Opensans text-sm text-slate-700 font-medium mb-2">Password</label>
+
+                <input type="password" id="Password" className="border-b-2 border-b-neutral-100 mb-5 " />
+
+
+                
+                <div className=" justify-end flex text-sm mb-6 text-blue-500">
+                
+                Forgot Password?
+                </div>
+
+                <button type="submit" className="p-4 bg-amber-500 text-white rounded-xl ">Login</button>
+
+              </form>
+            </div>
+
+            <div className=" font- font-Opensans text-sm mt-5">
+            Don't you have account? <span className="text-blue-400" >Create a account</span>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default Login;
