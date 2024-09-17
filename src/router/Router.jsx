@@ -3,6 +3,8 @@ import Login from "../component/login page/login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../component/home page/Home";
 import NavFooter from "../pages/NavFooter/NavFooter";
+import Cart from "../component/cart/cart";
+
 
 function AppRouter() {
   return (
@@ -12,7 +14,13 @@ function AppRouter() {
 
         <Route path="/*" element={<NavFooter />}>
           <Route path="Home" element={<Home />} />
-        </Route>
+          <Route path="Cart" element={<Cart />} />
+
+         
+
+          </Route>
+
+        
       </Routes>
     </BrowserRouter>
   );

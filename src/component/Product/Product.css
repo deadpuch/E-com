@@ -1,4 +1,9 @@
+.P_M_Container{
+    max-width: 300px;
+    height: auto;
+}
+
 .ProductimageContainer{
-    width: 120px;
-    height: 120px;
+    max-width: 300px;
+    height: 300px;
 }
