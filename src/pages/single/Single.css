@@ -1,0 +1,15 @@
+
+
+.SPimgContainer{
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+    width:100%;
+}
+
+.SPimgContainer>img{
+
+    object-fit: contain;
+    width: 100%;
+
+}

@@ -5,9 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import "./cart.css";
 
 function Cart() {
-  const { count, apistate } = useSelector((store) => store.data);
+  // const { count, apistate } = useSelector((store) => store.data);
   const  addcart  = useSelector((store) => store.data.addcart);
-  console.log(addcart);
+ 
   
   const dispatch = useDispatch();
 
@@ -26,15 +26,15 @@ function Cart() {
 
 
   return (
-    <div className=" container mx-auto">
+    <div className=" container mx-auto px-5 ">
       <h1 className="font-Opensans font-semibold text-2xl">
         Start where you stoped
       </h1>
 
-      <div className="flex flex-row ">
-        <ul>
+      <div className="flex">
+        <ul className="flex flex-wrap my-10 gap-5">
           {addcart&&addcart?.map((item, id) => (
-            <li key={id} className="flex C_Container">
+            <li key={id} className="flex C_Container gap-5">
               <div>
                 <div className="CImage_conatiner">
                   <img
@@ -66,13 +66,13 @@ function Cart() {
           ))}
         </ul>
 
-        <div>
-          <h2>Total</h2>
-          <h3>
-            {totalPrice}
+      </div>
+        <div className="my-11 ">
+          <h2 className="font-Opensans text-2xl">Total</h2>
+          <h3 className="font-Opensans font-semibold text-2xl">
+            {totalPrice} INR
           </h3>
         </div>
-      </div>
     </div>
   );
 }

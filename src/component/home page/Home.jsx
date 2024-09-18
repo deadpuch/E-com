@@ -18,8 +18,11 @@ function Home() {
       });
   }, [dispatch]);
 
+
+
+
   return (
-    <section className="container mx-auto flex flex-wrap gap-20 mt-9">
+    <section className="container mx-auto flex flex-wrap gap-20 my-10 justify-center ">
       {apistate.map((product) => (
         <Product main={product} key={product?.id} />
       ))}
